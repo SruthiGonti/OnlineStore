@@ -30,7 +30,8 @@ public class Login{
 	
 	@Given("^User is on the home page$")
 	public void user_is_on_the_home_page() throws Throwable {
-		driver.get("http://www.store.demoqa.com");
+		//driver.get("http://www.store.demoqa.com");
+		driver.get("https://www.google.com");
 		Assert.assertEquals(0, driver.findElements(By.id("account_logout")).size());
 	}
 
